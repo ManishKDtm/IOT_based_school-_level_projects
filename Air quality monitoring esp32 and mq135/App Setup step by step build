@@ -1,0 +1,75 @@
+## 📲 Blynk App Setup (New Blynk Platform)
+
+Follow these steps to set up the Blynk IoT app for real-time gas monitoring and email alerts.
+
+---
+
+### 🧑‍💻 Step 1: Install & Log In
+- Download the **Blynk IoT** app:
+  - [Android (Google Play)](https://play.google.com/store/apps/details?id=cloud.blynk)
+  - [iOS (App Store)](https://apps.apple.com/us/app/blynk-iot/id1556555273)
+- Sign up or log in with your Blynk account.
+
+---
+
+### 🧱 Step 2: Create a New Template (via Blynk Web Dashboard)
+1. Go to [https://blynk.cloud](https://blynk.cloud)
+2. Click **Templates → + New Template**
+   - **Name**: `Air Quality`
+   - **Hardware**: `ESP8266`
+   - **Connection Type**: `WiFi`
+3. Save the template.
+
+---
+
+### 📊 Step 3: Add a Data Stream
+1. Inside your template, go to **DataStreams → + New Data Stream**
+   - **Type**: Virtual Pin
+   - **Name**: `AirQuality`
+   - **Pin**: `V2`
+   - **Data Type**: Integer
+   - **Min**: 0
+   - **Max**: 1000 (or based on your `map()` function)
+2. Click Save.
+
+---
+
+### ✉️ Step 4: Add an Event for Email Alerts
+1. Go to **Events** inside your template.
+2. Click **+ New Event**
+   - **Event Name**: `instant_email` *(must match the name used in your code)*
+   - **Condition**: None (it’s triggered by code)
+   - **Notification**: Enable **Send Email**
+   - **Message**: `⚠️ High gas content detected!`
+3. Save the event.
+
+---
+
+### 📱 Step 5: Create a Device
+1. Go to the **Devices** tab.
+2. Click **+ New Device → From Template**
+   - Select your `Air Quality` template.
+3. Blynk will generate a **Device Name** and a unique **BLYNK_AUTH_TOKEN**.
+   - **Copy the Auth Token** and paste it into your Arduino code.
+
+---
+
+### 📲 Step 6: Set Up Mobile Dashboard
+1. Open the Blynk app on your phone.
+2. Select your newly created device.
+3. Tap the **Edit Icon (pencil)** to enter edit mode.
+4. Add the following widgets:
+   - **Gauge or Label**:
+     - Connect to **Virtual Pin V2**
+     - Label: `Air Quality`
+     - Range: 0–1000 (or your mapped value)
+   - **(Optional)** Add LED widgets, notifications, or graph history.
+
+---
+
+### ✅ Final Checklist:
+- [ ] Template created
+- [ ] V2 data stream configured
+- [ ] Email event (`instant_email`) added
+- [ ] Device linked with Auth Token
+- [ ] Widgets placed on the mobile dashboard
