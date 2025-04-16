@@ -1,0 +1,41 @@
+## 🛠️ Hardware Setup
+
+### 🧾 Components Required:
+| Component        | Quantity |
+|------------------|----------|
+| ESP8266 NodeMCU  | 1        |
+| MQ135 Gas Sensor | 1        |
+| Buzzer (Active/Passive) | 1  |
+| Breadboard (optional) | 1   |
+| Jumper Wires     | 6–8      |
+
+---
+
+### 🔌 Circuit Connections
+
+#### ➤ MQ135 to NodeMCU
+| MQ135 Pin | NodeMCU Pin | Description           |
+|-----------|-------------|-----------------------|
+| VCC       | 3.3V        | Power supply          |
+| GND       | GND         | Ground                |
+| AO        | A0          | Analog output signal  |
+
+#### ➤ Buzzer to NodeMCU
+| Buzzer Pin | NodeMCU Pin | Description       |
+|------------|-------------|-------------------|
+| + (VCC)    | D1 (GPIO5)  | Buzzer input pin  |
+| - (GND)    | GND         | Ground            |
+
+> ⚠️ **Note**: The analog pin A0 on NodeMCU reads voltages between 0V and 1V. If your MQ135 outputs more than 1V, use a **voltage divider** (two resistors) to step down the voltage safely.
+
+---
+
+### 📋 GPIO Reference for NodeMCU (ESP8266)
+
+| NodeMCU Pin | GPIO No. | Usable For           |
+|-------------|----------|----------------------|
+| D0          | GPIO16   | General I/O          |
+| D1          | GPIO5    | **Buzzer in this project** |
+| D2          | GPIO4    | General I/O          |
+| A0          | A0       | **MQ135 analog input** |
+
