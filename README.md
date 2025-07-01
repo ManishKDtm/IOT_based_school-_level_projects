@@ -1,6 +1,6 @@
 <!-- Banner -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ManishKDtm/IOT_based_school-_level_projects/main/assets/banner_iot_projects.png" alt="IoT Projects Banner" width="100%" />
+  <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fiotdunia.com%2Fiot-projects%2F&psig=AOvVaw1xgBVDi6iixQUL-iOvhpoz&ust=1751492633979000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMjumdbQnI4DFQAAAAAdAAAAABAT" width="100%" />
 </p>
 
 <!-- Title -->
@@ -53,4 +53,3 @@
 
 ---
 
-Would you like me to now continue by listing all **20 project cards** (with icons and links) right under this section in a clean layout?
