@@ -1,7 +1,5 @@
 <!-- Banner -->
 <p align="center">
-  <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fiotdunia.com%2Fiot-projects%2F&psig=AOvVaw1xgBVDi6iixQUL-iOvhpoz&ust=1751492633979000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMjumdbQnI4DFQAAAAAdAAAAABAT" width="100%" />
-</p>
 
 <!-- Title -->
 <h1 align="center">📡 Smart & Practical IoT Projects for School-Level Innovators</h1>
