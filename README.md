@@ -30,9 +30,8 @@
 
 ## 📂 What's Inside?
 
-- 🔧 `setup.md` → Components, working, circuit info  
+- 🔧 `readme.md` → Components, working, circuit info  
 - 🧠 `code.ino` → Arduino code (ESP8266 / ESP32)  
-- 🔌 `connections.png` → Visual wiring diagram  
 - 📶 Internet: Web Server / Blynk / Arduino Cloud  
 
 > 💡 Each project runs **independently**, is easy to upload, and doesn't require any paid cloud services.
@@ -47,7 +46,36 @@
 
 ---
 
-📌 *Scroll down for all 20 ready-to-use projects with circuit diagrams, code, and guides.*
+## 📘 Project Index
+
+| No. | Project Title | Link |
+|-----|---------------|------|
+| 01 | 🔥 [Fire Alert System](./fire-alert-system) |
+| 02 | 💡 [Automated Street Light](./automated-street-light) |
+| 03 | 🔦 [Fire Alarm with Web Server](./fire-alarm-with-webserver) |
+| 04 | 🧪 [Gas Leakage Alert](./gas-leakage-alert) |
+| 05 | ✋ [Gesture Controlled IoT Relay](./gesture-controlled-iot-relay) |
+| 06 | ❤️ [IoT Health Monitoring System](./iot-health-monitoring-system) |
+| 07 | 🚨 [Laser-Based Intruder Alert](./laser-intruder-alert) |
+| 08 | 🔐 [OTP Door Security System](./otp-door-security-blynk) |
+| 09 | 🅿️ [Parking Slot Monitor](./parking-slot-monitor) |
+| 10 | 🆔 [RFID Attendance with Blynk](./rfid-attendance-blynk) |
+| 11 | 🏠 [Room Automation System](./room-automation) |
+| 12 | 🔓 [Smart Door Lock with Keypad](./smart-door-lock-keypad) |
+| 13 | 🗑️ [Smart Dustbin Monitor](./smart-dustbin-monitor) |
+| 14 | 🌿 [Smart Plant Health Monitor](./plant-health-monitor) |
+| 15 | ⚡ [Smart Energy Meter](./smart-energy-meter) |
+| 16 | 🗑️ [Smart Garbage Monitoring System](./smart-garbage-monitor) |
+| 17 | 💧 [Smart Irrigation System](./smart-irrigation-system) |
+| 18 | 🚰 [Water Tank Level Monitoring](./water-level-monitoring) |
+| 19 | 👕 [Wearable Fall Detection Alert](./fall-detection-system) |
+| 20 | 🌫️ [Air Quality Monitor](./air-quality-monitor) |
 
 ---
 
+### 👨‍🔬 Maintained by [ManishKDtm](https://github.com/ManishKDtm)
+
+📧 Contact: dmanishkumar093@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/manish-kd-23b91a254)
+
+---
