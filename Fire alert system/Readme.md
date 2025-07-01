@@ -69,20 +69,6 @@ A compact and efficient IoT-based fire detection system designed using the ESP32
 - Do not expose components directly to high heat or prolonged flames  
 - Provide airflow to prevent smoke accumulation near the flame sensor
 
----
-
-## 📸 Preview
-
-*(Add a screenshot of Blynk app or connection diagram if available)*
-
----
-
-## 📁 Project Files
-
-- `setup.md` – Instructions & wiring  
-- `code.ino` – Arduino sketch  
-- `connections.txt` – Notes & safety tips  
-- `README.md` – Project overview  
 
 ---
 
