@@ -30,7 +30,7 @@
 
 ## 📂 What's Inside?
 
-- 🔧 `readme.md` → Components, working, circuit info  
+- 🔧 `readme.md` → Components, working, and circuit info  
 - 🧠 `code.ino` → Arduino code (ESP8266 / ESP32)  
 - 📶 Internet: Web Server / Blynk / Arduino Cloud  
 
@@ -48,34 +48,40 @@
 
 ## 📘 Project Index
 
-| No. | Project Title | Link |
-|-----|---------------|------|
-| 01 | 🔥 [Fire Alert System](./fire-alert-system) |
-| 02 | 💡 [Automated Street Light](./automated-street-light) |
-| 03 | 🔦 [Fire Alarm with Web Server](./fire-alarm-with-webserver) |
-| 04 | 🧪 [Gas Leakage Alert](./gas-leakage-alert) |
-| 05 | ✋ [Gesture Controlled IoT Relay](./gesture-controlled-iot-relay) |
-| 06 | ❤️ [IoT Health Monitoring System](./iot-health-monitoring-system) |
-| 07 | 🚨 [Laser-Based Intruder Alert](./laser-intruder-alert) |
-| 08 | 🔐 [OTP Door Security System](./otp-door-security-blynk) |
-| 09 | 🅿️ [Parking Slot Monitor](./parking-slot-monitor) |
-| 10 | 🆔 [RFID Attendance with Blynk](./rfid-attendance-blynk) |
-| 11 | 🏠 [Room Automation System](./room-automation) |
-| 12 | 🔓 [Smart Door Lock with Keypad](./smart-door-lock-keypad) |
-| 13 | 🗑️ [Smart Dustbin Monitor](./smart-dustbin-monitor) |
-| 14 | 🌿 [Smart Plant Health Monitor](./plant-health-monitor) |
-| 15 | ⚡ [Smart Energy Meter](./smart-energy-meter) |
-| 16 | 🗑️ [Smart Garbage Monitoring System](./smart-garbage-monitor) |
-| 17 | 💧 [Smart Irrigation System](./smart-irrigation-system) |
-| 18 | 🚰 [Water Tank Level Monitoring](./water-level-monitoring) |
-| 19 | 👕 [Wearable Fall Detection Alert](./fall-detection-system) |
-| 20 | 🌫️ [Air Quality Monitor](./air-quality-monitor) |
+| No. | Project Title |
+|-----|---------------|
+| 01 | 🔥 [Fire Alert System](https://github.com/ManishKDtm/IOT_based_school-_level_projects/tree/main/Fire%20alert%20system) |
+| 02 | 💡 [Automated Street Light](https://github.com/ManishKDtm/IOT_based_school-_level_projects/tree/main/Automated%20street%20light) |
+| 03 | 🔦 [Fire Alarm with Web Server](https://github.com/ManishKDtm/IOT_based_school-_level_projects/tree/main/Fire_Alarm_with_webserver) |
+| 04 | 🧪 [Gas Leakage Alert](https://github.com/ManishKDtm/IOT_based_school-_level_projects/tree/main/Gas%20Leakage%20Alert) |
+| 05 | ✋ [Gesture Controlled IoT Relay](https://github.com/ManishKDtm/IOT_based_school-_level_projects/tree/main/Gesture%20controlled%20iot%20relay) |
+| 06 | ❤️ [IoT Health Monitoring System](https://github.com/ManishKDtm/IOT_based_school-_level_projects/tree/main/IOT%20Health%20monitoring%20system) |
+| 07 | 🚨 [Intruder Alert using Laser Beam](https://github.com/ManishKDtm/IOT_based_school-_level_projects/tree/main/Intruder%20alert%20using%20laser%20beam) |
+| 08 | 🔐 [OTP Door Security using Blynk](https://github.com/ManishKDtm/IOT_based_school-_level_projects/tree/main/OTP%20Door%20Security%20using%20Blynk) |
+| 09 | 🅿️ [Parking Slot Monitor using Blynk](https://github.com/ManishKDtm/IOT_based_school-_level_projects/tree/main/Parking%20slot%20monitor%20using%20blynk) |
+| 10 | 🆔 [RFID Based Attendance with Blynk](https://github.com/ManishKDtm/IOT_based_school-_level_projects/tree/main/RFID%20based%20attendance%20with%20blynk) |
+| 11 | 🏠 [Room Automation](https://github.com/ManishKDtm/IOT_based_school-_level_projects/tree/main/Room-Automation) |
+| 12 | 🔓 [Smart Door Lock using Keypad Input](https://github.com/ManishKDtm/IOT_based_school-_level_projects/tree/main/Smart%20Door%20Lock%20using%20Keypad%20input) |
+| 13 | 🗑️ [Smart Dustbin with Filling Monitoring](https://github.com/ManishKDtm/IOT_based_school-_level_projects/tree/main/Smart%20dustbin%20with%20filling%20monitoring) |
+| 14 | 🌿 [Smart Plant Health Monitor](https://github.com/ManishKDtm/IOT_based_school-_level_projects/tree/main/Smart%20plant%20health%20monitor) |
+| 15 | ⚡ [Smart Energy Meter](https://github.com/ManishKDtm/IOT_based_school-_level_projects/tree/main/Smart-Energy-Meter) |
+| 16 | 🗑️ [Smart Garbage Monitor](https://github.com/ManishKDtm/IOT_based_school-_level_projects/tree/main/Smart-Garbage-Monitor) |
+| 17 | 💧 [Smart Irrigation System](https://github.com/ManishKDtm/IOT_based_school-_level_projects/tree/main/Smart-Irrigation-system) |
+| 18 | 🚰 [Water Level Monitoring](https://github.com/ManishKDtm/IOT_based_school-_level_projects/tree/main/Water%20level%20monitoring) |
+| 19 | 👕 [Wearable Fall Detection Alert System](https://github.com/ManishKDtm/IOT_based_school-_level_projects/tree/main/Wearable%20fall%20detection%20alert%20system) |
+| 20 | 🌫️ [Air Quality Monitor (ESP32 + MQ135)](https://github.com/ManishKDtm/IOT_based_school-_level_projects/tree/main/Air%20quality%20monitoring%20esp32%20and%20mq135) |
 
 ---
 
-### 👨‍🔬 Maintained by [ManishKDtm](https://github.com/ManishKDtm)
+## 👨‍🔬 Maintained by [ManishKDtm](https://github.com/ManishKDtm)
 
-📧 Contact: dmanishkumar093@gmail.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/manish-kd-23b91a254)
+📧 Email: dmanishkumar093@gmail.com  
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/manish-kd-23b91a254)
+
+---
+
+## 🤝 Contributions
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you'd like to contribute.
 
 ---
