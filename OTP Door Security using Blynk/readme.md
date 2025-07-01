@@ -1,53 +1,96 @@
-# 🔐 OTP Door Security using Blynk
+# 🔐 IoT Smart Door Lock with OTP via Blynk
 
 ## 🔍 Overview
-This project uses an ESP8266 to control a solenoid door lock, which can only be unlocked through a One-Time Password (OTP) generated and sent via the Blynk app. Ideal for smart home and school-level access control systems.
-
-## 🧰 Components Used
-- ESP8266 NodeMCU
-- Keypad (4x4 or 4x3)
-- Solenoid Lock or Relay with DC lock
-- Blynk App (New Version)
-- Jumper wires + Breadboard
-- 5V external power supply for lock
-
-## 🔐 How It Works
-- The Blynk app sends a randomly generated 4-digit OTP to the user.
-- User inputs the OTP on the keypad.
-- If correct, the lock is activated for a short time and auto-locks again.
-
-## 📱 Blynk App Setup
-- Use Blynk IoT Cloud (https://blynk.cloud)
-- Add widgets:
-  - `Button` (send OTP) → Virtual Pin V0
-  - `Notification` (wrong/correct OTP)
-  - Optional `Terminal` for feedback
+This system allows users to control a solenoid door lock by entering an OTP (One-Time Password) sent to them via the Blynk IoT app. It uses a keypad, ESP8266 NodeMCU, and a relay module to drive the lock mechanism.
 
 ---
 
-## 🔧 Wiring (Text Description)
+## 🧰 Components Required
+- ESP8266 NodeMCU
+- 4x4 or 4x3 Keypad
+- Relay Module (for lock control)
+- Solenoid Door Lock or DC Lock
+- Blynk IoT App (New version, not Legacy)
+- Jumper Wires, Breadboard
+- 5V Power Source (for lock)
 
-**Keypad**
-- Connect rows/columns to D2–D8 (adjust in code)
+---
 
-**Solenoid Lock or Relay Module**
-- IN → D1 (GPIO5)
-- VCC → VIN
+## 📱 Blynk IoT App Setup Guide (New Platform)
+
+1. **Create an Account**
+   - Visit [https://blynk.cloud](https://blynk.cloud) and sign up.
+   - Or install the **Blynk IoT app** from Play Store / App Store.
+
+2. **Create a New Template**
+   - Go to **Templates → New Template**
+   - Name: `Smart Door Lock`
+   - Hardware: `ESP8266`
+   - Connection Type: `WiFi`
+   - Save the `Template ID`, `Device Name`, and `Auth Token`
+
+3. **Add a Device**
+   - Go to **Devices → New Device → From Template**
+   - Select your newly created template
+   - Give your device a name (e.g., "HomeDoor")
+
+4. **Add Widgets to Dashboard**
+   - **Button Widget (Virtual Pin V0)**  
+     → Used to trigger OTP generation
+   - **Notification Widget**  
+     → Displays unlock success or failure
+   - *(Optional)* **Terminal Widget** for debug logs
+
+5. **Enable Events for Notifications**
+   - Go to **Template → Events**
+   - Add:
+     - `otp_generated` → Message: `"Your OTP is: @val"`
+     - `otp_success` → Message: `"✅ Door Unlocked Successfully"`
+     - `otp_fail` → Message: `"❌ Wrong OTP Attempt"`
+
+6. **Link the Auth Token**
+   - Copy the `Auth Token` into the Arduino code
+
+---
+
+## 🔧 Wiring Diagram (Text Description)
+
+**Keypad (4x4)**
+- R1 → D2  
+- R2 → D3  
+- R3 → D4  
+- R4 → D5  
+- C1 → D6  
+- C2 → D7  
+- C3 → D8  
+- C4 → D0  
+
+**Relay Module**
+- IN  → D1 (GPIO5)  
+- VCC → VIN  
 - GND → GND
+
+**Solenoid Lock**
+- Connect through relay (NO-COM)
+- External 5V/12V power supply
 
 ---
 
 ## ⚠️ Hardware Notes & Safety Precautions
 
-### 🔐 Solenoid Lock / Relay
-- Always use **external 5V–12V supply** for lock.
-- Use **optocoupled relay** to prevent back-EMF affecting ESP.
-- Add **flyback diode** across lock terminals if using direct drive.
+### 🧠 ESP8266 NodeMCU
+- Use a stable 5V USB adapter (500mA+) for Wi-Fi stability
+- Avoid exceeding GPIO voltage levels (use logic protection if needed)
 
 ### 🔢 Keypad
-- Debounce logic may be required for fast keypresses.
-- Keep wires short and tight; long wires may cause ghost inputs.
+- Keep wiring short to avoid signal noise
+- Mount it securely to avoid key bouncing issues
 
-### 🧠 ESP8266
-- Protect GPIO pins from 5V outputs.
-- Add a **100 µF capacitor** to reduce reset issues on power surge.
+### 🔐 Relay & Lock
+- Use **external power** for solenoid lock (not from ESP board)
+- Add a **flyback diode** across lock terminals if powered directly
+- Use an **optocoupler-based relay** for isolation
+
+---
+
+📱 *Once uploaded and connected, you can generate OTP from Blynk and enter it on the keypad to unlock the system securely.*
