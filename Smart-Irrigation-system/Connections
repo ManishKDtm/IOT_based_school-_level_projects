@@ -1,0 +1,14 @@
+[Soil Sensor] --> [ESP8266]
+  - VCC  → 3.3V
+  - GND  → GND
+  - AO   → A0
+
+[Relay Module] --> [ESP8266]
+  - VCC  → VIN (5V)
+  - GND  → GND
+  - IN   → D1 (GPIO5)
+
+[Pump Power Control]
+  - Relay COM → Pump –
+  - Relay NO  → GND or Pump GND Supply
+  - Pump +ve  → +5V (external power)
